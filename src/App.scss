@@ -1,0 +1,80 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #E4EBF5;
+}
+// COMMON STYLE
+button{
+  background-color: transparent;
+  border: none;
+}
+// FONT
+h2{
+  font-size: 4rem;
+}
+h3{
+  font-size: 1.7rem;
+}
+.today{
+  font-size:  1.1rem;
+}
+.forcast{
+  font-size: 1rem;
+}
+
+// COLOR
+
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+$shadow: .3rem .3rem .6rem#c8d0e7, 
+-.2rem -.2rem .5rem #fff;
+
+$inner-shadow: inset .2rem .2rem .5rem #c8d0e7, 
+inset -.2rem -.2rem .5rem #fff;
+
+$background: #F4F5FB;
+$dark-gray:#343a40;
+$light-gray: #adb5bd;
+
+@mixin shadow{
+  
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  @include flex;
+  min-width:  100vw;
+  min-height: 100vh;
+}
+.App-wrapper{
+  @include flex;
+  width: 900px;
+  height: 600px;
+  box-shadow:.8rem .8rem 1.4rem #c8d0e7, 
+  -.2rem -.2rem 1.8rem #fff;
+  border-radius: 20px;
+  padding: 40px;
+  flex-direction: column;
+}
+@import'./containers/Containers.scss';
+@import'./components/Search.scss';
+@import'./components/Today.scss';
+@import'./components/ForecastItem.scss';

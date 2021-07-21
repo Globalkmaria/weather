@@ -1,0 +1,56 @@
+.today {
+  margin-left: 20px;
+  margin-top: 20px;
+  flex: 5 5;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    display: flex;
+    flex: 3 3;
+  }
+
+  &__city {
+    height: 100%;
+    width: 50%;
+  }
+  
+  &__current {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__curTemp {
+    font-size: 4rem;
+    width: 50%;
+    height: 50%;
+  }
+  
+  &__condition {
+    font-size: 2rem;
+    width: 50%;
+    height: 50%;
+  }
+
+  &__detail {
+    flex: 2 2;
+    display: flex;   
+    flex-direction: column;
+  }
+
+  &__detail-item{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .item-box{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    span{
+      margin-left: 5px;
+    }
+  }
+}
