@@ -1,3 +1,13 @@
+// COLOR
+$shadow: .3rem .3rem .6rem#c8d0e7, 
+-.2rem -.2rem .5rem #fff;
+
+$inner-shadow: inset .2rem .2rem .5rem #c8d0e7, 
+inset -.2rem -.2rem .5rem #fff;
+
+$background: #F4F5FB;
+$dark-gray:#343a40;
+$light-gray: #495057;
 
 *{
   margin: 0;
@@ -24,35 +34,12 @@ h3{
 }
 .forcast{
   font-size: 1rem;
+  span{
+    color: $light-gray;
+  }
 }
 
-// COLOR
 
-:root {
-  --primary-light: #8abdff;
-  --primary: #6d5dfc;
-  --primary-dark: #5b0eeb;
-  
-  --white: #FFFFFF;
-  --greyLight-1: #E4EBF5;
-  --greyLight-2: #c8d0e7;
-  --greyLight-3: #bec8e4;
-  --greyDark: #9baacf;
-}
-
-$shadow: .3rem .3rem .6rem#c8d0e7, 
--.2rem -.2rem .5rem #fff;
-
-$inner-shadow: inset .2rem .2rem .5rem #c8d0e7, 
-inset -.2rem -.2rem .5rem #fff;
-
-$background: #F4F5FB;
-$dark-gray:#343a40;
-$light-gray: #adb5bd;
-
-@mixin shadow{
-  
-}
 @mixin flex {
   display: flex;
   justify-content: center;

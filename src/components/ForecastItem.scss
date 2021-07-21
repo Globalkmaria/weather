@@ -8,6 +8,12 @@
   flex-direction: column;
   width: 200px;
   height: 85%;
+  span{
+    color: $light-gray;
+  }
+  &__detailItem{
+    margin-top: 2px
+  }
   &__footer{
     flex: 1 1;
     height: 100%;
