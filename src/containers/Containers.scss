@@ -6,9 +6,10 @@
   display: flex;
 
   &__content {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    flex: 6 6;
+    flex: 11 11;
     height: 100%;
     width: 100%;
   }

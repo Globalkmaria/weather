@@ -1,12 +1,12 @@
 import React from 'react';
 import Search from '../components/Search';
 
-function SearchContainer() {
+function SearchContainer({ setSearch }) {
   return (
     <>
-      <Search />
+      <Search setSearch={setSearch} />
     </>
   );
 }
 
-export default SearchContainer;
+export default React.memo(SearchContainer);

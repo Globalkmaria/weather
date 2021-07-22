@@ -6,8 +6,10 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  width: 200px;
   height: 85%;
+  h3{
+    width: 11rem;
+  }
   span{
     color: $light-gray;
   }

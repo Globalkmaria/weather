@@ -1,12 +1,15 @@
 import React from 'react';
 import ForecastItemContainer from './ForecastItemContainer';
 
-function ForecastContainer() {
+function ForecastContainer({ dailyData, yesterdayData }) {
   return (
     <div className="forecast">
-      <ForecastItemContainer />
+      <ForecastItemContainer
+        dailyData={dailyData}
+        yesterdayData={yesterdayData}
+      />
     </div>
   );
 }
 
-export default ForecastContainer;
+export default React.memo(ForecastContainer);

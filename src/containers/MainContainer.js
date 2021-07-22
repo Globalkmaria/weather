@@ -3,18 +3,23 @@ import Icon from '../components/Icon';
 import SearchContainer from './SearchContainer';
 import TodayContainer from './TodayContainer';
 
-function MainContainer() {
+function MainContainer({ currentData, dailyData, setSearch, cityname }) {
+  const iconId = currentData.weather[0].icon;
   return (
     <main className="main">
       <div className="main__content">
-        <SearchContainer />
-        <TodayContainer />
+        <SearchContainer setSearch={setSearch} />
+        <TodayContainer
+          cityname={cityname}
+          currentData={currentData}
+          dailyData={dailyData}
+        />
       </div>
       <div className="main__icon">
-        <Icon lg />
+        <Icon lg iconId={iconId} />
       </div>
     </main>
   );
 }
 
-export default MainContainer;
+export default React.memo(MainContainer);

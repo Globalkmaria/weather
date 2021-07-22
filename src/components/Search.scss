@@ -1,11 +1,13 @@
 .search{
+  margin-left: 10px;
   flex: 1 1;
   @include flex;
-  width: 100%;
+  width: calc(100% - 10px);
+  min-height: 2.5rem;
   height: 100%;
   box-shadow: $shadow;
   border-radius: 20px;
-  padding: 0 30px;
+  padding:0px 17px 0 30px; 
   display: flex;
   justify-content: space-between;
   &-input{
@@ -21,5 +23,10 @@
   }
   &-icon{
     font-size: 1.1rem;
+    display: flex;
+    width: 3rem;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
