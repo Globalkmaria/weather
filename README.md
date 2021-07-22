@@ -27,8 +27,10 @@ With Simple weather you can check
 - Next 7 days max & min temperature, weather
 
 For first landing page,
+<br>
 if you accept to use your location it will directly show your city weather.
-Else, it will show Seoul weather.
+<br>
+Else, it will show 'Seoul' weather.
 
 You can also check other city by simply entering city name in the search bar.
 <br>
