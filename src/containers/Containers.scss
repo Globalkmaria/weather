@@ -53,6 +53,7 @@
     border-radius: 20px;
     background-color: #f2f6fcc2;
   }
-  // -ms-overflow-style: none;  /* IE and Edge */
-  // scrollbar-width: none;  /* Firefox */
+  /* Firefox */
+  scrollbar-color: $light-gray #f2f6fcc2;
+  scrollbar-width: thin;
 }
