@@ -38,8 +38,21 @@
   height: 100%;
   overflow: auto;
   &::-webkit-scrollbar {
-    display: none;
+    cursor: pointer;
+    height: 10px;
   }
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    cursor: pointer;
+    background-color: $light-gray;
+    border-radius: 20px;
+    
+  }
+  &::-webkit-scrollbar-track {
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #f2f6fcc2;
+  }
+  // -ms-overflow-style: none;  /* IE and Edge */
+  // scrollbar-width: none;  /* Firefox */
 }
