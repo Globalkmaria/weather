@@ -14,7 +14,7 @@ Project Link: <https://simple-weather-d160f.web.app/>
 ## Technologies
 
 - REACT
-- Rest API(Open Weather API)
+- Open Weather API
 - SASS(SCSS)
 
 ## Simple weather

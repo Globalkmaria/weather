@@ -18,6 +18,7 @@ function App() {
   const { currentData, dailyData, cityname } = mainData;
   const [yesterdayData, setYesterdayData] = useState(null);
   const [search, setSearch] = useState(null);
+
   async function getLocationWeather(lon, lat, city) {
     const main_data = await fetchLocationWeather(lon, lat);
     const current = main_data.data.current;
@@ -31,6 +32,7 @@ function App() {
     setYesterdayData(yesterday_data);
     setSearch(null);
   }
+
   useEffect(() => {
     if (cityname) return;
     navigator.geolocation.getCurrentPosition(
@@ -42,6 +44,7 @@ function App() {
       () => getLocationWeather(127.0144, 37.4856, 'Seoul')
     );
   }, [cityname]);
+
   useEffect(() => {
     if (search === null) return;
     async function getCityWeather(search) {
@@ -55,6 +58,7 @@ function App() {
     }
     getCityWeather(search);
   }, [search]);
+
   return (
     <div className="App">
       <div className="App-wrapper">

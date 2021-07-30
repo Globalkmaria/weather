@@ -6,6 +6,7 @@ import {
   IoPartlySunnySharp,
   IoRainy,
 } from 'react-icons/io5';
+
 function Loading() {
   return (
     <div className="loading">

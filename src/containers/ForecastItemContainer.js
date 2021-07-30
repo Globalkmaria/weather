@@ -1,12 +1,7 @@
 import React, { useMemo } from 'react';
 import ForecastItem from '../components/ForecastItem';
-function getmaxNmix(array) {
-  const temps = [];
-  for (let i = 0; i < array.length; i++) {
-    temps.push(array[i]['temp']);
-  }
-  return [Math.floor(Math.max(...temps)), Math.floor(Math.min(...temps))];
-}
+import { getmaxNmix } from '../utils/date';
+
 function ForecastItemContainer({ dailyData, yesterdayData }) {
   const [max, min] = useMemo(() => getmaxNmix(yesterdayData.data.hourly), [
     yesterdayData.data.hourly,

@@ -13,3 +13,10 @@ export function getWeekday(num) {
   const get_date = new Date(date);
   return get_date.toLocaleDateString('en-us', { weekday: 'long' });
 }
+export function getmaxNmix(array) {
+  const temps = [];
+  for (let i = 0; i < array.length; i++) {
+    temps.push(array[i]['temp']);
+  }
+  return [Math.floor(Math.max(...temps)), Math.floor(Math.min(...temps))];
+}

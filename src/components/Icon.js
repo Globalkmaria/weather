@@ -7,6 +7,7 @@ import {
   IoRainy,
 } from 'react-icons/io5';
 import { RiMistLine } from 'react-icons/ri';
+
 function Icon({ lg, iconId }) {
   const weather = iconId.slice(0, 2);
   const day = iconId[2];
